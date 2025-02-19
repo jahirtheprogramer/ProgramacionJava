@@ -25,8 +25,8 @@ do {
     System.out.println("4. Opción 4");
     System.out.println("5. Opción 5");
     System.out.println("6. Opción 6");
-    System.out.println("6. Opción 7");
-    System.out.println("6. Opción 8");
+    System.out.println("7. Opción 7");
+    System.out.println("8. Opción 8");
     System.out.println("6. Opción 9");
     System.out.println("6. Opción 10");
     System.out.println("6. Opción 11");
@@ -46,7 +46,7 @@ do {
             EjercicioDos objdos= new EjercicioDos();
          objdos.tomarDatos();
             break;
-        // Más casos según las opciones del menú
+        
         case 3:
           EjercicioTres objtres= new EjercicioTres();
          objtres.tomarDatos();
@@ -64,7 +64,12 @@ do {
             objSeis.tomarDatos();
             break;
         case 7:
-            
+            EjercicioSiete objSiete = new EjercicioSiete();
+            objSiete.tomarDatos();
+            break;
+        case 8:
+            EjercicioOcho objOcho = new EjercicioOcho();
+            objOcho.pedirDatos();
         default:
             System.out.println("Opción inválida.");
             break;
