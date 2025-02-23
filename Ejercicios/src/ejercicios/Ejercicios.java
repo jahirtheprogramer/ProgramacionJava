@@ -34,7 +34,8 @@ do {
     System.out.println("13. Opción 13");
     System.out.println("14. Opción 14");
     System.out.println("15. Opción 15");
-
+    System.out.println("16. Opción 16");
+    System.out.println("17. Opción 17");
     System.out.println("30. Salir");
     System.out.print("Seleccione una opción: ");
     opcion = scanner.nextInt();
