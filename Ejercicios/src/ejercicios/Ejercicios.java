@@ -36,22 +36,36 @@ do {
     System.out.println("15. Opción 15");
     System.out.println("16. Opción 16");
     System.out.println("17. Opción 17");
-    System.out.println("30. Salir");
+    System.out.println("18. Opción 18");
+    System.out.println("19. Opción 19");
+    System.out.println("20. Opción 20");
+    System.out.println("21. Opción 21");
+    System.out.println("22. Opción 22");
+    System.out.println("23. Opción 23");
+    System.out.println("24. Opción 24");
+    System.out.println("25. Opción 25");
+    System.out.println("26. Opción 26");
+    System.out.println("27. Opción 27");
+    System.out.println("28. Opción 28");
+
+    System.out.println("29. Salir");
     System.out.print("Seleccione una opción: ");
     opcion = scanner.nextInt();
 
     switch (opcion) {
         case 1:
-             
+            EjercicioUno ObjUno = new EjercicioUno();
+            ObjUno.pedirDatos();
+            ObjUno.calcularFactura();
             break;
         case 2:
             EjercicioDos objdos= new EjercicioDos();
-         objdos.tomarDatos();
+            objdos.tomarDatos();
             break;
         
         case 3:
-          EjercicioTres objtres= new EjercicioTres();
-         objtres.tomarDatos();
+            EjercicioTres objtres= new EjercicioTres();
+            objtres.tomarDatos();
             break;
         case 4:
             EjercicioCuatro objCuatro= new EjercicioCuatro();
@@ -109,11 +123,55 @@ do {
              EjercicioDiecisiete juego = new EjercicioDiecisiete();
              juego.iniciarJuego();
             break; 
+        case 18:
+             EjercicioDieciocho libreria = new EjercicioDieciocho();
+             libreria.iniciarRegistro();
+            break;
+        case 19:
+             EjercicioDiecinueve menu = new EjercicioDiecinueve();
+             menu.iniciarPedido();
+            break; 
+        case 20:
+             EjercicioVeinte temp = new EjercicioVeinte();
+             temp.verificarTemperatura();
+            break; 
+        case 21:
+             EjercicioVeintiuno notas = new EjercicioVeintiuno();
+             notas.calcularPromedio();
+            break; 
+        case 22:
+             EjercicioVeintidos gestorTareas = new EjercicioVeintidos();
+             gestorTareas.gestionarTareas();
+            break;
+        case 23:
+             EjercicioVeintitres registroVentas = new EjercicioVeintitres();
+             registroVentas.registrarVentas();
+        case 24:
+             EjercicioVeinticuatro ejercicioVeinticuatro = new EjercicioVeinticuatro();
+             ejercicioVeinticuatro.registrarVehiculos();
+            break;
+        case 25:
+             EjercicioVeinticinco ejercicioVeinticinco = new EjercicioVeinticinco();
+             ejercicioVeinticinco.realizarCompra();
+             break;
+        case 26:
+             EjercicioVeintiseis ejercicioVeintiseis = new EjercicioVeintiseis();
+             ejercicioVeintiseis.gestionarContactos();
+             break;
+        case 27:
+             EjercicioVeintisiete ejercicioVeintisiete = new EjercicioVeintisiete();
+             ejercicioVeintisiete.sumarNumeros();
+             break;
+        case 28:
+             EjercicioVeintiocho ejercicioVeintiocho = new EjercicioVeintiocho();
+             ejercicioVeintiocho.registrarVentas();
+             break;
+            
         default:
             System.out.println("Opción inválida.");
             break;
     }
-} while (opcion != 30);
+} while (opcion != 29);
 
 scanner.close();
 
